@@ -1,0 +1,29 @@
+.navigation {
+  background: #20262e;
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navigation h1 {
+  margin-left: 5rem;
+  color: #e9e8e8;
+  font-weight: 200;
+}
+
+ul {
+  display: flex;
+  gap: 4rem;
+  margin-right: 5rem;
+  align-items: center;
+  justify-content: center;
+}
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #e9e8e8;
+}

@@ -1,17 +1,25 @@
 import React from "react";
-import "../MainHeader/Navigation.css";
+import "./Navigation.css";
 
-function Navigation() {
+function Navigation(props) {
   return (
     <nav className="navigation">
-      <h1>Uber</h1>
       <ul>
-        <li>
-          <a href="#\">Login</a>
-        </li>
-        <li>
-          <a href="#\">Sign up</a>
-        </li>
+        {props.isLoggedIn && (
+          <li>
+            <a href="/">Users</a>
+          </li>
+        )}
+        {props.isLoggedIn && (
+          <li>
+            <a href="/">Admin</a>
+          </li>
+        )}
+        {props.isLoggedIn && (
+          <li>
+            <button onClick={props.onLogout}>Logout</button>
+          </li>
+        )}
       </ul>
     </nav>
   );
